@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/libreviewList"
+    android:background="@color/putih">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:background="@color/putih"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/reviewId"
+                android:visibility="invisible"
+                />
+
+            <TextView
+                android:layout_width="280sp"
+                android:layout_height="wrap_content"
+                android:id="@+id/reviewTitle"
+                android:text="Title"
+                android:textSize="18sp"
+                android:textColor="@color/biruMuda"
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="270sp"
+                android:layout_height="wrap_content"
+                android:id="@+id/reviewDescription"
+                android:textSize="16sp"
+                android:text="Description"
+                android:layout_marginLeft="10dp"
+                android:layout_below="@id/memberId"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/libraryId"
+                android:visibility="invisible"
+                />
+
+            <TextView
+                android:layout_width="270sp"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:id="@+id/memberId"
+                android:text="Member ID"
+                android:layout_marginLeft="10dp"
+                android:layout_below="@id/reviewTitle"
+
+                />
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

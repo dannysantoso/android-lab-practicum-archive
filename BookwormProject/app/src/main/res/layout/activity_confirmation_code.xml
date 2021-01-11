@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ConfirmationCode"
+    android:background="@drawable/gradient">
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="60dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Confirmation Code"
+        android:textColor="@color/putih"
+        android:textStyle="bold"
+        android:textSize="40sp"
+        android:textAlignment="center"
+        />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="180dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Resend Code"
+        android:textColor="@color/putih"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_marginBottom="-20dp"
+        android:layout_marginLeft="120dp"
+        android:id="@+id/resend"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/code"
+        android:textColorHint="@color/biruMuda"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/edittext_login_background"
+        android:hint="Your Code"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CONFIRM"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/button_login"
+        android:id="@+id/codeButton"/>
+
+
+</LinearLayout>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/reviewCell">
+
+    <androidx.cardview.widget.CardView
+        android:layout_margin="3dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/reviewId"
+                android:visibility="invisible"
+                />
+
+            <TextView
+                android:layout_width="280sp"
+                android:layout_height="wrap_content"
+                android:id="@+id/reviewTitle"
+                android:text="Title"
+                android:textSize="22sp"
+                android:textColor="@color/biruMuda"
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="270sp"
+                android:layout_height="wrap_content"
+                android:id="@+id/reviewDescription"
+                android:textSize="18sp"
+                android:textColor="#a9a9a9"
+                android:text="Description"
+                android:layout_marginLeft="10dp"
+                android:layout_below="@id/reviewTitle"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/libraryId"
+                android:visibility="invisible"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/memberId"
+                android:visibility="invisible"
+                />
+
+            <Button
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:text="Remove"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="@color/putih"
+                android:layout_toRightOf="@+id/reviewDescription"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/button_remove"
+                android:id="@+id/removeButton"/>
+
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
